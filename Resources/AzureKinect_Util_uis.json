@@ -1,0 +1,18 @@
+﻿{
+    "Persistence": {
+        "KinectPreviewUI": {
+            "asset": "KinectPreviewUI",
+            "type": "Normal",
+            "canvas": "CanvasDefault"
+        },
+        "GameUI": {
+            "asset": "GameUI",
+            "type": "Normal",
+            "canvas": "CanvasDefault"
+        }
+    },
+
+    "SceneEntry": {},
+
+    "SceneGame": {}
+}
