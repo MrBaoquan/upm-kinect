@@ -22,7 +22,7 @@ public class AzureKinectScript : SceneScriptBase
     private void Start()
     {
         // Application.targetFrameRate = 30;
-        Managements.UI.Show<GameUI>();
+        // Managements.UI.Show<GameUI>();
     }
 
     // Called per frame after Start

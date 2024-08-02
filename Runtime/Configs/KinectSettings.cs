@@ -12,9 +12,12 @@ using System.Linq;
 using Newtonsoft.Json;
 using com.rfilkov.components;
 
-using OpenCVForUnity.CoreModule;
-using OpenCVForUnity.ImgprocModule;
-using OpenCVForUnity.UnityUtils;
+using UNIHper.Network;
+using UNIHper.UI;
+
+// using OpenCVForUnity.CoreModule;
+// using OpenCVForUnity.ImgprocModule;
+// using OpenCVForUnity.UnityUtils;
 
 public class TrackingInfo
 {
@@ -370,7 +373,9 @@ public class KinectSettings : UConfig
 
                         queryHandFrame();
                         logText += poseText + "\n";
+#if OpencvForUnity
                         queryAvatarFrame();
+#endif
                         // queryAvatarFrame_cus();
                         queryBodyDataFrame();
                         Managements.UI.Get<HelpUI>()?.SetContent(logText, 60);
@@ -497,11 +502,12 @@ public class KinectSettings : UConfig
         }
     }
 
-    private Mat _avatarMat = null;
+    // private Mat _avatarMat = null;
     private Texture2D _avatarTex = null;
 
     byte[] _avatarBytes = null;
 
+#if OpencvForUnity
     private void queryAvatarFrame()
     {
         if (AvatarSettings.Enabled == false)
@@ -540,6 +546,7 @@ public class KinectSettings : UConfig
         _avatarMat.release();
         _avatarMat.Dispose();
     }
+#endif
 
     [XmlIgnore]
     public ReactiveProperty<Vector2> HandPosition = new ReactiveProperty<Vector2>(Vector2.one * -1);
