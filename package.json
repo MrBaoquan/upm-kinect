@@ -1,6 +1,6 @@
 {
   "name": "com.parful.kinect",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "displayName": "Azure Kinect Kit",
   "description": "安装后，需要手动选择安装kinect example包 (Azure Kinect / Orbbec Kinect)",
   "unity": "2019.1",
@@ -9,7 +9,7 @@
   "licensesUrl": "https://example.com/licensing.html",
   "dependencies": {
     "com.software.muip": "1.0.0",
-    "com.parful.unihper": "1.24.728"
+    "com.parful.unihper": "1.24.921"
  },
  "keywords": [
     "kinect"

@@ -91,7 +91,7 @@ namespace AzureKinect_Util
         {
             if (userId != primaryUserID)
                 return;
-            Debug.LogWarning($"Gesture {gesture} progress: {progress}");
+            // Debug.LogWarning($"Gesture {gesture} progress: {progress}");
 
             if (progress > 0.4f)
             {

@@ -310,7 +310,7 @@ public class KinectSettings : UConfig
         if (this.PoseSettings.DetectGestures.Count <= 0)
         {
             this.PoseSettings.DetectGestures.Add(GestureType.Wave);
-            this.Serialize();
+            this.Save();
         }
 
         TrackingInfo trackingInfo = new TrackingInfo();

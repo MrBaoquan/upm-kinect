@@ -4,16 +4,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UNIHper;
-using DNHper;
+using UNIHper.UI;
 using com.rfilkov.kinect;
-using Microsoft.Azure.Kinect.Sensor;
 using UniRx;
-using System.Threading.Tasks;
 using UnityEngine.InputSystem;
 using MPUIKIT;
 using Michsky.MUIP;
 using UnityEngine.Events;
 
+[UIPage(Asset = "KinectPreviewUI", Type = UIType.Popup)]
 public class KinectPreviewUI : UIBase
 {
     public UnityEvent<KinectSettings> OnResizePreviewTexture = new UnityEvent<KinectSettings>();
